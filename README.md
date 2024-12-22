@@ -18,27 +18,50 @@ Welcome to my personal portfolio website! This project showcases my skills, educ
 
 ---
 
-## 🚀 Sections
-### 1. **Home**
-- A brief introduction to who I am and my expertise.
-- Links to social media profiles and a downloadable resume.
+## 📷 Screenshot
 
-### 2. **Skills**
-- Detailed list of technical and professional skills.
-- Proficiency levels displayed visually with progress bars.
-
-### 3. **Education**
-- Timeline format showcasing my academic background.
-
-### 4. **Experience**
-- Cards highlighting my professional experiences and key achievements.
-
-### 5. **Certifications**
-- Organized certification collection with options to view PDFs or badges.
-
-### 6. **Contact**
-- Contact form and links for easy communication.
+### Home Page (Index)
+![Home Page](images/home-page-screenshot.png)
 
 ---
 
-## 📂 Project Structure
+## 🚀 How to Use
+
+### Clone and Run Locally
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/Char0n1507/My_Portfolio.git
+2. Navigate to the project directory
+   ```bash
+   cd My_Portfolio
+3. Open index.html in your browser to view the site locally.
+
+4. 📂 Project Structure
+  My_Portfolio/
+├── index.html
+├── skills.html
+├── education.html
+├── experience.html
+├── certifications.html
+├── contact.html
+├── style.css
+├── /certificates
+├── /images
+│   └── home-page-screenshot.png
+├── README.md
+
+🛠️ Tools and Technologies Used
+  HTML5, CSS3: For structuring and styling the website.
+  GitHub Pages: For hosting the live website.
+  Font Awesome: For adding icons to enhance design.
+  Visual Studio Code: As the code editor for development.
+
+🌐 Hosting on GitHub Pages
+  Files are hosted via GitHub Pages.
+  Updates can be pushed directly to the main branch, and the site will update automatically.
+
+📄 License
+  This project is licensed under the MIT License. Feel free to use or modify it as needed.
+  
+🌟 Thank You!
+  Feel free to explore, share, and provide feedback on my portfolio. I hope you enjoy the experience!
