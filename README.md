@@ -21,7 +21,7 @@ Welcome to my personal portfolio website! This project showcases my skills, educ
 ## 📷 Screenshot
 
 ### Home Page (Index)
-![Home Page](images/home-page-screenshot.png)
+![Home Page](index.png)
 
 ---
 
@@ -36,7 +36,8 @@ Welcome to my personal portfolio website! This project showcases my skills, educ
    cd My_Portfolio
 3. Open index.html in your browser to view the site locally.
 
-4. 📂 Project Structure
+📂 Project Structure
+```bash
   My_Portfolio/
 ├── index.html
 ├── skills.html
@@ -49,19 +50,23 @@ Welcome to my personal portfolio website! This project showcases my skills, educ
 ├── /images
 │   └── home-page-screenshot.png
 ├── README.md
-
+```
 🛠️ Tools and Technologies Used
+
   HTML5, CSS3: For structuring and styling the website.
   GitHub Pages: For hosting the live website.
   Font Awesome: For adding icons to enhance design.
   Visual Studio Code: As the code editor for development.
 
 🌐 Hosting on GitHub Pages
+
   Files are hosted via GitHub Pages.
   Updates can be pushed directly to the main branch, and the site will update automatically.
 
 📄 License
+
   This project is licensed under the MIT License. Feel free to use or modify it as needed.
   
 🌟 Thank You!
+
   Feel free to explore, share, and provide feedback on my portfolio. I hope you enjoy the experience!
