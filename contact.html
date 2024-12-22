@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+        .contact {
+            padding: 5rem 10%;
+            text-align: center;
+        }
+        .contact h1 {
+            font-size: 4rem;
+            margin-bottom: 2rem;
+            color: #b74b4b;
+        }
+        .contact-details {
+            margin-bottom: 4rem;
+        }
+        .contact-details p {
+            font-size: 1.6rem;
+            margin: 0.5rem 0;
+        }
+        .contact-details a {
+            color: #b74b4b;
+            text-decoration: none;
+        }
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+        .social-icons {
+            margin: 2rem 0;
+        }
+        .social-icons a {
+            margin: 0 1rem;
+            color: #b74b4b;
+            font-size: 2.5rem;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        .social-icons a:hover {
+            transform: scale(1.2);
+            color: #f00;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .contact-form label {
+            font-size: 1.6rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #b74b4b;
+            border-radius: 5px;
+            background-color: #161616;
+            color: white;
+            font-size: 1.4rem;
+        }
+        .contact-form button {
+            background-color: #b74b4b;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.6rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        .contact-form button:hover {
+            background-color: #f00;
+            transform: scale(1.05);
+        }
+        .back-home {
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .back-home a {
+            text-decoration: none;
+            padding: 1rem 2rem;
+            font-size: 1.6rem;
+            color: #fff;
+            background: linear-gradient(90deg, #b74b4b, #f00);
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(183, 75, 75, 0.5);
+            transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .back-home a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <section class="contact">
+        <h1>Contact Me</h1>
+        <div class="contact-details">
+            <p><strong>Email:</strong> <a href="mailto:spedhiti@charlotte.edu">spedhiti@charlotte.edu</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+19803273377">+1 980-327-3377</a></p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/sricharan-pedhiti" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Char0n1507" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/Charan_1507" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form action="mailto:spedhiti@charlotte.edu" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <!-- Back to Home Button -->
+    <div class="back-home">
+        <a href="index.html">Back to Home</a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+</body>
+</html>

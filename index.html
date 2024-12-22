@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Sri Charan - Portfolio</title>
+    <style>
+        /* Logo styling with increased size */
+        header .logo img {
+            height: 80px; /* Increased size */
+            width: auto;
+            transition: transform 0.3s ease, filter 0.3s ease;
+            filter: drop-shadow(0 0 10px #b74b4b);
+        }
+        header .logo img:hover {
+            transform: scale(1.1) rotate(5deg);
+            filter: drop-shadow(0 0 20px #f00);
+        }
+
+        /* Cool name effect */
+        .home-content h1 span {
+            background: linear-gradient(90deg, #b74b4b, #f00, #b74b4b);
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: gradient-text 3s infinite;
+        }
+        @keyframes gradient-text {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        .home-content h1 {
+            font-size: 4.5rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+        .home-content h1 span {
+            display: inline-block;
+            animation: bounce 1.5s infinite ease-in-out;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt="Sri Charan Logo"></a>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="services.html">Services</a>
+            <a href="skills.html">Skills</a>
+            <a href="education.html">Education</a>
+            <a href="experience.html">Experience</a>
+            <a href="certifications.html">Certifications</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, It's <span>Sri Charan</span></h1>
+            <h3>Cybersecurity Enthusiast</h3>
+            <p>I’m Sri Charan Pedhiti, a passionate Cybersecurity master’s student with expertise in penetration testing, threat detection, and system optimization. Let’s work together to secure the future!</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/sricharan-pedhiti" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Char0n1507" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/Charan_1507" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <a href="Sri%20Charan%20Pedhiti.pdf" class="btn" download>Hire me</a>
+        </div>
+    </section>
+</body>
+</html>

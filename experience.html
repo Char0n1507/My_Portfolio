@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Experience</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+        .experience {
+            padding: 5rem 10%;
+        }
+        .experience h1 {
+            text-align: center;
+            font-size: 4rem;
+            margin-bottom: 3rem;
+            color: #b74b4b;
+        }
+        .experience-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .experience-card {
+            background: linear-gradient(145deg, #161616, #242424);
+            border: 1px solid #b74b4b;
+            border-radius: 15px;
+            padding: 2rem;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(183, 75, 75, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .experience-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px #b74b4b;
+        }
+        .experience-card h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #b74b4b;
+        }
+        .experience-card p {
+            font-size: 1.4rem;
+            margin: 1rem 0;
+        }
+        .experience-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #b74b4b;
+        }
+        .back-home {
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .back-home a {
+            text-decoration: none;
+            padding: 1rem 2rem;
+            font-size: 1.6rem;
+            color: #fff;
+            background: linear-gradient(90deg, #b74b4b, #f00);
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(183, 75, 75, 0.5);
+            transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .back-home a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+        }
+        @media screen and (max-width: 768px) {
+            .experience-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="experience">
+        <h1>Experience</h1>
+        <div class="experience-container">
+            <div class="experience-card">
+                <i class="experience-icon fa-solid fa-graduation-cap"></i>
+                <h2>University of North Carolina at Charlotte</h2>
+                <p><strong>Role:</strong> Graduate Teaching Assistant</p>
+                <p><strong>Duration:</strong> August 2024 – Present</p>
+                <p>• Mentored over 75 students in advanced cybersecurity topics, including network security and ethical hacking.</p>
+                <p>• Designed and delivered interactive workshops using tools like Metasploit and Nmap.</p>
+                <p>• Streamlined grading processes by developing automated systems, reducing grading time by 25%.</p>
+            </div>
+            <div class="experience-card">
+                <i class="experience-icon fa-solid fa-building"></i>
+                <h2>Accenture, Bangalore, India</h2>
+                <p><strong>Role:</strong> Software Engineer</p>
+                <p><strong>Duration:</strong> October 2022 – December 2023</p>
+                <p>• Enhanced bot transaction capacity from 4 to 8 transactions per minute using Automation Anywhere.</p>
+                <p>• Improved workflow productivity by 30% through effective debugging and barrier resolution.</p>
+                <p>• Reduced deployment time for S4HANA upgrade bots by two weeks per project.</p>
+            </div>
+            <div class="experience-card">
+                <i class="experience-icon fa-solid fa-shield-halved"></i>
+                <h2>Virtually Testing Foundation, California, USA</h2>
+                <p><strong>Role:</strong> Cybersecurity Intern</p>
+                <p><strong>Duration:</strong> January 2021 – December 2021</p>
+                <p>• Identified 15+ critical vulnerabilities, strengthening web application security frameworks.</p>
+                <p>• Developed a home lab with virtual environments to simulate real-world cybersecurity scenarios.</p>
+                <p>• Participated in 10+ CTF competitions, refining penetration testing methodologies.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Back to Home Button -->
+    <div class="back-home">
+        <a href="index.html">Back to Home</a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Services</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .coming-soon {
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .coming-soon h1 {
+            font-size: 5rem;
+            color: #b74b4b;
+            margin-bottom: 1rem;
+            animation: pulse 1.5s infinite;
+        }
+        .coming-soon p {
+            font-size: 2rem;
+            color: white;
+            margin-top: 0.5rem;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            font-size: 1.6rem;
+            color: #b74b4b;
+            background: transparent;
+            border: 2px solid #b74b4b;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background: #b74b4b;
+            color: black;
+            transform: scale(1.1);
+        }
+        @keyframes pulse {
+            0%, 100% {
+                text-shadow: 0 0 10px #b74b4b, 0 0 20px #b74b4b, 0 0 30px #b74b4b;
+            }
+            50% {
+                text-shadow: 0 0 20px #d14c4c, 0 0 40px #d14c4c, 0 0 60px #d14c4c;
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="coming-soon">
+        <h1>Coming Soon</h1>
+        <p>Our amazing services are in the works! Stay tuned for updates.</p>
+        <a href="index.html" class="btn">Back to Home</a>
+    </div>
+</body>
+</html>

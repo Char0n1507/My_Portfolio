@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Experience</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+        .experience {
+            padding: 5rem 10%;
+        }
+        .experience h1 {
+            text-align: center;
+            font-size: 4rem;
+            margin-bottom: 3rem;
+            color: #b74b4b;
+        }
+        .experience-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .experience-card {
+            background: linear-gradient(145deg, #161616, #242424);
+            border: 1px solid #b74b4b;
+            border-radius: 15px;
+            padding: 2rem;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(183, 75, 75, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .experience-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px #b74b4b;
+        }
+        .experience-card h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #b74b4b;
+        }
+        .experience-card p {
+            font-size: 1.4rem;
+            margin: 1rem 0;
+        }
+        .experience-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #b74b4b;
+        }
+        @media screen and (max-width: 768px) {
+            .experience-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="experience">
+        <h1>Experience</h1>
+        <div class="experience-container">
+            <div class="experience-card">
+                <i class="experience-icon fa-solid fa-building"></i>
+                <h2>Accenture, Bangalore, India</h2>
+                <p><strong>Role:</strong> Software Engineer</p>
+                <p><strong>Duration:</strong> October 2022 – December 2023</p>
+                <p>• Enhanced bot transaction capacity from 4 to 8 transactions per minute using Automation Anywhere.</p>
+                <p>• Improved workflow productivity by 30% through effective debugging and barrier resolution.</p>
+                <p>• Reduced deployment time for S4HANA upgrade bots by two weeks per project.</p>
+            </div>
+            <div class="experience-card">
+                <i class="experience-icon fa-solid fa-shield-halved"></i>
+                <h2>Virtually Testing Foundation, California, USA</h2>
+                <p><strong>Role:</strong> Cybersecurity Intern</p>
+                <p><strong>Duration:</strong> January 2021 – December 2021</p>
+                <p>• Identified 15+ critical vulnerabilities, strengthening web application security frameworks.</p>
+                <p>• Developed a home lab with virtual environments to simulate real-world cybersecurity scenarios.</p>
+                <p>• Participated in 10+ CTF competitions, refining penetration testing methodologies.</p>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+</body>
+</html>
