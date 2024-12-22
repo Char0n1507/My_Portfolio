@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Certifications</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+        .certifications {
+            padding: 5rem 10%;
+            text-align: center;
+        }
+        .certifications h1 {
+            font-size: 4rem;
+            color: #b74b4b;
+            margin-bottom: 3rem;
+        }
+        .certification-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .certification-card {
+            background: linear-gradient(145deg, #161616, #242424);
+            border: 1px solid #b74b4b;
+            border-radius: 15px;
+            padding: 2rem;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(183, 75, 75, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .certification-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px #b74b4b;
+        }
+        .certification-card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #b74b4b;
+        }
+        .certification-card p {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+        .certification-badge {
+            color: #b74b4b;
+            text-decoration: underline;
+            font-size: 1.4rem;
+            cursor: pointer;
+        }
+        .back-home {
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .back-home a {
+            text-decoration: none;
+            padding: 1rem 2rem;
+            font-size: 1.6rem;
+            color: #fff;
+            background: linear-gradient(90deg, #b74b4b, #f00);
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(183, 75, 75, 0.5);
+            transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .back-home a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+        }
+        .certification-modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #242424;
+            border: 2px solid #b74b4b;
+            border-radius: 10px;
+            padding: 1.5rem;
+            z-index: 1000;
+            box-shadow: 0 0 25px #b74b4b;
+            text-align: center;
+        }
+        .certification-modal img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .certification-modal .close-btn {
+            margin-top: 1rem;
+            padding: 0.8rem 1.5rem;
+            background: #b74b4b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .certification-modal .close-btn:hover {
+            background: #f00;
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+    <section class="certifications">
+        <h1>Certifications</h1>
+        <div class="certification-grid">
+            <div class="certification-card">
+                <h2>CompTIA Security+ ce</h2>
+                <p>View and verify certification details.</p>
+                <a href="certificates/CompTIA Security+ ce certificate.pdf" target="_blank" class="certification-badge">View PDF</a>
+            </div>
+            <div class="certification-card">
+                <h2>eJPTv2</h2>
+                <p>View and verify certification details.</p>
+                <a href="certificates/eJPTv2.pdf" target="_blank" class="certification-badge">View PDF</a>
+            </div>
+            <div class="certification-card" onclick="openModal('foundations-of-operationalizing-mitre-att-ck')">
+                <h2>MITRE ATT&CK Foundations</h2>
+                <p>Operationalizing MITRE ATT&CK knowledge.</p>
+                <span class="certification-badge">View Image</span>
+            </div>
+            <div class="certification-card">
+                <h2>Infosys Certified Software Programmer</h2>
+                <p>View and verify certification details.</p>
+                <a href="certificates/Infosys_Cert.pdf" target="_blank" class="certification-badge">View PDF</a>
+            </div>
+            <div class="certification-card">
+                <h2>Internship Certificate 1</h2>
+                <p>View and verify certification details.</p>
+                <a href="certificates/Internship_Cert.pdf" target="_blank" class="certification-badge">View PDF</a>
+            </div>
+            <div class="certification-card">
+                <h2>Internship Certificate 2</h2>
+                <p>View and verify certification details.</p>
+                <a href="certificates/Internship_Cert2.pdf" target="_blank" class="certification-badge">View PDF</a>
+            </div>
+            <div class="certification-card">
+                <h2>Microsoft Certified: SC-900</h2>
+                <p>Security, Compliance, and Identity Fundamentals.</p>
+                <a href="certificates/SC-900.pdf" target="_blank" class="certification-badge">View PDF</a>
+            </div>
+            <div class="certification-card">
+                <h2>Virtually Testing Foundation Member</h2>
+                <p>View and verify certification details.</p>
+                <a href="certificates/VirtuallyTestingFoundation-Member_Badge20241222-27-mpldub.pdf" target="_blank" class="certification-badge">View PDF</a>
+            </div>
+            <div class="certification-card">
+                <h2>VTF Penetration Testing Internship</h2>
+                <p>View and verify certification details.</p>
+                <a href="certificates/VTF-PenetrationTestingInternship-OctobertoDecember2021_Badge20241222-27-vz13om.pdf" target="_blank" class="certification-badge">View PDF</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Home Button -->
+    <div class="back-home">
+        <a href="index.html">Back to Home</a>
+    </div>
+
+    <div class="overlay" id="overlay" onclick="closeModal()"></div>
+    <div class="certification-modal" id="certification-modal">
+        <img id="certification-img" src="" alt="Certificate">
+        <button class="close-btn" onclick="closeModal()">Close</button>
+    </div>
+
+    <script>
+        function openModal(certificate) {
+            const modal = document.getElementById('certification-modal');
+            const overlay = document.getElementById('overlay');
+            const img = document.getElementById('certification-img');
+            const certificates = {
+                'foundations-of-operationalizing-mitre-att-ck': 'certificates/foundations-of-operationalizing-mitre-att-ck.png'
+            };
+            img.src = certificates[certificate];
+            modal.style.display = 'block';
+            overlay.style.display = 'block';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('certification-modal');
+            const overlay = document.getElementById('overlay');
+            modal.style.display = 'none';
+            overlay.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
