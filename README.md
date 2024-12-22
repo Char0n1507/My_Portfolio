@@ -21,7 +21,7 @@ Welcome to my personal portfolio website! This project showcases my skills, educ
 ## 📷 Screenshot
 
 ### Home Page (Index)
-![Home Page](index.png)
+![Home Page](index.jpeg)
 
 ---
 
